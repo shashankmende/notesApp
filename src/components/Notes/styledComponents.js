@@ -1,5 +1,5 @@
 // Style your elements here
-import styled, {createGlobalStyle} from './styledComponents'
+import styled, {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     *:focus{
@@ -13,7 +13,7 @@ export const BgContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 40px;
 `
@@ -26,16 +26,21 @@ export const TopHeading = styled.h1`
 export const FormContainer = styled.form`
   padding: 15px;
   border-radius: 10px;
-  box-shadow: #aab8c8;
+  box-shadow: 0px 4px 16px 0px #aab8c8;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  justify-content: space-between;
+  width: 60%;
+  height: 300px;
+  margin-bottom: 30px;
 `
 
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 20px;
+  border: none;
 `
 
 export const Label = styled.label`
@@ -48,6 +53,14 @@ export const Input = styled.input`
   background-color: transparent;
 
   padding: 10px;
+  border: none;
+`
+
+export const TextArea = styled.textarea`
+  background-color: transparent;
+
+  padding: 10px;
+  border: none;
 `
 
 export const Btn = styled.button`
@@ -58,6 +71,7 @@ export const Btn = styled.button`
   cursor: pointer;
   outline: none;
   align-self: flex-end;
+  border: none;
 `
 
 export const EmptyViewContainer = styled.div`
@@ -69,7 +83,8 @@ export const EmptyViewContainer = styled.div`
 `
 
 export const Image = styled.img`
-  width: 100;
+  width: 40%;
+  margin-bottom: 30px;
 `
 
 export const Heading = styled.h1`
@@ -85,5 +100,5 @@ export const NotesList = styled.ul`
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0px;
-  width: 80%;
+  width: 65%;
 `

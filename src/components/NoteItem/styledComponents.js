@@ -8,6 +8,7 @@ export const ListItem = styled.li`
   padding: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
+  list-style-type: none;
 `
 export const Heading = styled.h1`
   font-family: 'Roboto';

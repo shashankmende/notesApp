@@ -4,11 +4,11 @@ import {Heading, Para, ListItem} from './styledComponents'
 
 const NoteItem = props => {
   const {noteItem} = props
-  const {title, description} = noteItem
+  const {notes, description} = noteItem
 
   return (
     <ListItem>
-      <Heading>{title}</Heading>
+      <Heading>{notes}</Heading>
       <Para>{description}</Para>
     </ListItem>
   )

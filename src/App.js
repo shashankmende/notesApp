@@ -1,6 +1,5 @@
-import Notes from './components/Notes'
-
 import {GlobalStyle} from './styledComponents'
+import Notes from './components/Notes'
 
 const App = () => (
   <>
